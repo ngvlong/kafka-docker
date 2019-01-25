@@ -73,5 +73,5 @@ deploy:
   - provider: script
     script: bash docker_push "${TRAVIS_SCALA_VERSION}-${KAFKA_VERSION}"
     on:
-      repo: wurstmeister/kafka-docker
+      repo: ngvlongit1/kafka
       # branch: release
