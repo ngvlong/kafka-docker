@@ -67,11 +67,11 @@ deploy:
   - provider: script
     script: bash docker_push latest
     on:
-      repo: ngvlongit1/kafka
+      repo: ngvlong/kafka-docker
       branch: longtom
       condition: $CURRENT = $LATEST
   - provider: script
     script: bash docker_push "${TRAVIS_SCALA_VERSION}-${KAFKA_VERSION}"
     on:
-      repo: ngvlongit1/kafka
-      # branch: release
+      repo: ngvlong/kafka-docker
+      branch: longtom
